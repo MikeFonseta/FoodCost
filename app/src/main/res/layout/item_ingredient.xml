@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textNameQuantityIngrediant"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Farina ( 1kg )"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/textQuantityIngrediant"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/textQuantityIngrediant"
+        android:layout_width="93dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="+ 0,149 €"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateIngrediant"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Button
+        android:id="@+id/btnUpdateIngrediant"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:text="i"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemoveIngrediant"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Button
+        android:id="@+id/btnRemoveIngrediant"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/red"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/ingredientsListChoice"
+        android:hint="Quantità utilizzata (grammi)"></EditText>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:text="AGGIUNGI"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="257dp">
+
+    </Button>
+
+    <Spinner
+        android:id="@+id/ingredientsListChoice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:spinnerMode="dropdown"
+        tools:ignore="SpeakableTextPresentCheck"/>
+</RelativeLayout>
